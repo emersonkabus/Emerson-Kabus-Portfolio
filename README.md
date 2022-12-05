@@ -15,9 +15,11 @@ The goal of my analysis was to identify patterns in usage between one-time users
 
 Clearly, customers (one-timee users) use the bikes for much longer durations than subscribers (1hr6min/trip to 15min/trip). Discounts or rewards for longer trips could be a good way to convert more one-time users to subscribers. 
 
+
 ![](https://github.com/emersonkabus/Emerson-Kabus-Portfolio/blob/main/rides_by_usertype.png)
 
 Subscribers use the bikes much more during the weekdays and most likely use the service as a means to commute, while customer usage peaks during the weekend, likely for leisure. 
+
 
 ![](https://github.com/emersonkabus/Emerson-Kabus-Portfolio/blob/main/rides_by_gender_R.png)
 
