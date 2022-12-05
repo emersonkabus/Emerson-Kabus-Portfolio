@@ -11,4 +11,4 @@ The data I used was historical trip data for the year of 2019. It was provided b
 
 The goal of my analysis was to identify patterns in usage between one-time users and annual members within the trip data.
 
-[](https://github.com/emersonkabus/Emerson-Kabus-Portfolio/blob/main/duration_by_usertype.png)
+![](https://github.com/emersonkabus/Emerson-Kabus-Portfolio/blob/main/duration_by_usertype.png)
