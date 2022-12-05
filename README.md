@@ -5,7 +5,7 @@
 ## Project 1 
 #### Bike Share Analysis
 
-This project was a part of the Capstone Case Study within the Google Data Analytics Professional Certificiate. Cyclistic is a fictional bike-share company in Chicago with over 5,800 bicycles and 600 docking stations. The company offers two different pricing plans: single ride passes, full day passes, and annual memberships. Although this model helps attract more customers, the company believes that maximizing the amount of annual memberships is the best strategy for future growth. In order to convert more one-time users to members, the marketing team needs to know how one-time users and members differ in their riding habits. 
+This project was a part of the Capstone Case Study within the Google Data Analytics Professional Certificate. Cyclistic is a fictional bike-share company in Chicago with over 5,800 bicycles and 600 docking stations. The company offers two different pricing plans: single ride passes, full day passes, and annual memberships. Although this model helps attract more customers, the company believes that maximizing the amount of annual memberships is the best strategy for future growth. In order to convert more one-time users to members, the marketing team needs to know how one-time users and members differ in their riding habits. 
 
 The data I used was historical trip data for the year of 2019. It was provided by Google as part of the course.
 
@@ -13,7 +13,7 @@ The goal of my analysis was to identify patterns in usage between one-time users
 
 ![](https://github.com/emersonkabus/Emerson-Kabus-Portfolio/blob/main/duration_by_usertype.png)
 
-Clearly, customers (one-timee users) use the bikes for much longer durations than  subscribers (1hr6min/trip to 15min/trip). Discounts or rewards for longer trips could be a good way to convert more one-time users to subscribers. 
+Clearly, customers (one-timee users) use the bikes for much longer durations than subscribers (1hr6min/trip to 15min/trip). Discounts or rewards for longer trips could be a good way to convert more one-time users to subscribers. 
 
 ![](https://github.com/emersonkabus/Emerson-Kabus-Portfolio/blob/main/rides_by_usertype.png)
 
