@@ -10,3 +10,5 @@ This project was a part of the Capstone Case Study within the Google Data Analyt
 The data I used was historical trip data for the year of 2019. It was provided by Google as part of the course.
 
 The goal of my analysis was to identify patterns in usage between one-time users and annual members within the trip data.
+
+[](https://github.com/emersonkabus/Emerson-Kabus-Portfolio/blob/main/duration_by_usertype.png)
