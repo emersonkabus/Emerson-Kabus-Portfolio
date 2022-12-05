@@ -11,17 +11,17 @@ The data I used was historical trip data for the year of 2019. It was provided b
 
 The goal of my analysis was to identify patterns in usage between one-time users and annual members within the trip data.
 
-![](https://github.com/emersonkabus/Emerson-Kabus-Portfolio/blob/main/duration_by_usertype.png)
+![](/duration_by_usertype.png)
 
 Clearly, customers (one-timee users) use the bikes for much longer durations than subscribers (1hr6min/trip to 15min/trip). Discounts or rewards for longer trips could be a good way to convert more one-time users to subscribers. 
 
 
-![](https://github.com/emersonkabus/Emerson-Kabus-Portfolio/blob/main/rides_by_usertype.png)
+![](/rides_by_usertype.png)
 
 Subscribers use the bikes much more during the weekdays and most likely use the service as a means to commute, while customer usage peaks during the weekend, likely for leisure. 
 
 
-![](https://github.com/emersonkabus/Emerson-Kabus-Portfolio/blob/main/rides_by_gender_R.png)
+![](/rides_by_gender_R.png)
 
 The data on the gender of customers is not of much use, as male vs. female ride counts are quite similar and considering the vast number of N/A'.s The subscriber data however, clearly shows that there are far more male subscribers than female, so that is a demographic that the marketing team should certainly target. 
 
