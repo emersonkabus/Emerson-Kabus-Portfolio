@@ -3,7 +3,7 @@
 
 ## COVID Data Exploration with SQL
 
- ### Here I am taking a look at some COVID-related data found at https://ourworldindata.org/covid-deaths
+ ##### Here I am taking a look at some COVID-related data found at https://ourworldindata.org/covid-deaths
  
  [Check out the Tableau Dashboard I made using this data!](https://public.tableau.com/views/COVIDDashboard_16797769219990/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
