@@ -1,6 +1,66 @@
 # Data Analysis Portfolio
 ### Emerson Kabus
 
+## COVID Data Exploration with SQL
+
+ ### Here I am taking a look at some COVID-related data found at https://ourworldindata.org/covid-deaths
+ 
+ [Check out the Tableau Dashboard I made using this data!](https://public.tableau.com/views/COVIDDashboard_16797769219990/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
+-- taking a look at the data
+Select *
+From [dbo].[CovidDeaths$] 
+order by 3,4
+
+-- Percentage chance of dying if you contract COVID
+Select Location, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
+From [dbo].[CovidDeaths$]
+--Where location like '%states%'
+order by 1,2
+
+
+--Countries with highest death count per population
+Select Location, MAX(cast(Total_deaths as int)) as TotalDeathCount, MAX((total_deaths/population))*100 as HighestDeathPercentage
+From [dbo].[CovidDeaths$]
+Where continent is not null 
+Group by Location
+order by HighestDeathPercentage desc
+
+
+--Global Death Percentage
+Select SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
+From [dbo].[CovidDeaths$]
+where continent is not null 
+order by 1,2
+
+Select Location, SUM(cast(new_deaths as INT)) as TotalDeathCount
+From[dbo].[CovidDeaths$]
+Where Continent is null 
+and Location not in ('World', 'European Union', 'International')
+Group by Location
+Order by TotalDeathCount Desc
+
+--Countries with highest percentage of population infected
+Select Location, Population, MAX(total_cases) as HighestInfectionCount,  Max((total_cases/population))*100 as PercentPopulationInfected
+From [dbo].[CovidDeaths$]
+Group by Location, Population
+order by PercentPopulationInfected desc
+
+--Infection Percentage over time, great for a visualization
+Select Location, Population, date, MAX(total_cases) as HighestInfectionCount,  Max((total_cases/population))*100 as PercentPopulationInfected
+From [dbo].[CovidDeaths$]
+Group by Location, Population, Date
+order by PercentPopulationInfected desc
+
+--Cumulative Vaccination Count
+Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
+, SUM(CONVERT(int,vac.new_vaccinations)) OVER (Partition by dea.Location Order by dea.location, dea.Date) as RollingPeopleVaccinated
+From [dbo].[CovidDeaths$] dea
+Join [dbo].[CovidVaccinations$] vac
+	On dea.location = vac.location
+	and dea.date = vac.date
+where dea.continent is not null 
+order by 2,3
 
 ## Project 1 
 #### Bike Share Analysis
