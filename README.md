@@ -8,6 +8,7 @@
  [Check out the Tableau Dashboard I made using this data!](https://public.tableau.com/views/COVIDDashboard_16797769219990/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 -- taking a look at the data
+''' 
 Select *
 From [dbo].[CovidDeaths$] 
 order by 3,4
@@ -61,7 +62,7 @@ Join [dbo].[CovidVaccinations$] vac
 	and dea.date = vac.date
 where dea.continent is not null 
 order by 2,3
-
+'''
 ## Project 1 
 #### Bike Share Analysis
 
