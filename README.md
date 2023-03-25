@@ -3,7 +3,7 @@
 
 
 ### Project 1
-#### COVID Data Exploration and Visualization
+#### COVID Data Exploration (SQL) and Visualization (Tableau)
 
 Here, I use global data on COVID-related statistics such as cases, deaths, and vaccinations. I got the data from https://ourworldindata.org/covid-deaths. The SQL script that I wrote is in a separate file titled 'COVID Data Exploration SQL Script' in this repository. [Check out the Tableau Dashboard I made using this data!](https://public.tableau.com/views/COVIDDashboard_16797769219990/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
